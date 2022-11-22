@@ -17,13 +17,13 @@ On connect, the UI will disappear - on disconnect, the UI will appear.
 - Open the SaltyChat C# solution in Visual Studio
 - Open SaltyClient/VoiceManager.cs
 - Go to Line ~640 and add the following to the onMessage Event:
-`if (this.PlguinState == GameInstanceState.Ingame){
+- `if (this.PlguinState == GameInstanceState.Ingame){
  BaseScript.TriggerEvent("SaltyNUI:TsActive");
 }else{
  BaseScript.TriggerEvent("SaltyNUI:TsNotActive");
 }`
 - Go to Line ~500 and add the following to the OnDisconnected Event:
-`BaseScript.TriggerEvent("SaltyNUI:TsNotActive")`
+- `BaseScript.TriggerEvent("SaltyNUI:TsNotActive")`
 - Compile SaltyChat
 - Reupload SaltyChat to your server
 
@@ -31,21 +31,21 @@ On connect, the UI will disappear - on disconnect, the UI will appear.
 - Open the SaltyChat C# solution in Visual Studio
 - Open SaltyClient/VoiceManager.cs
 - Go to Line ~564 and add the following to the onMessage Event:
-`if(instanceState.IsReady){
+- `if(instanceState.IsReady){
   BaseScript.TriggerEvent("SaltyNUI:TsActive");$
  }else{
   BaseScript.TriggerEvent("SaltyNUI:TsNotActive");
 }`
 - Go to Line ~500 and add the following to the OnDisconnected Event:
-`BaseScript.TriggerEvent("SaltyNUI:TsNotActive")`
-> Compile SaltyChat
-> Reupload SaltyChat to your server
+- `BaseScript.TriggerEvent("SaltyNUI:TsNotActive")`
+- Compile SaltyChat
+- Reupload SaltyChat to your server
 
 ### SaltyChat Version 1.x.x
-> Open the SaltyChat C# solution in Visual Studio
-> Open SaltyClient/VoiceManager.cs
-> Go to Line ~560 and add the following under "if (pluginCommand.TryGetPayload(out PluginState pluginState))":
-`if(pluginState.IsReady){
+- Open the SaltyChat C# solution in Visual Studio
+- Open SaltyClient/VoiceManager.cs
+- Go to Line ~560 and add the following under "if (pluginCommand.TryGetPayload(out PluginState pluginState))":
+- `if(pluginState.IsReady){
   BaseScript.TriggerEvent("SaltyNUI:TsActive");
 }else{
   BaseScript.TriggerEvent("SaltyNUI:TsNotActive");
