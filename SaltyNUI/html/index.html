@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>saltynui</title>
+<style id="applicationStylesheet" type="text/css">
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans+Condensed:wght@300&display=swap);
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	background-color: rgb(0, 0, 0, 0);
+	user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+* {
+	font-family: Lato;
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#saltynui {
+		-webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+	#bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Gruppe_29 {
+		position: absolute;
+		width: 443px;
+		height: 522px;
+		left: 739px;
+		top: 279px;
+		overflow: visible;
+	}
+	#cc_14 {
+		opacity: 0.4;
+		position: absolute;
+		width: 443px;
+		height: 452px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		background: rgb(0, 0, 0);
+		border-radius: 20px
+	}
+	#Gruppe_25 {
+		position: absolute;
+		width: 112px;
+		height: 4.2px;
+		left: 164.8px;
+		top: 508px;
+		overflow: visible;
+	}
+	#cc_10 {
+		position: absolute;
+		width: 112px;
+		height: 4.2px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#cc_10_m {
+		fill: rgba(33,33,33,1);
+	}
+	.cc_10_m {
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		height: 4.2px;
+		left: 0px;
+		top: 0px;
+	}
+	#Clip {
+		position: absolute;
+		width: 112px;
+		height: 4.2px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Gruppe_30 {
+		-webkit-animation: slit-in-vertical 1s ease-out both;
+	        animation: slit-in-vertical 1s ease-out both;
+		position: absolute;
+		width: 291px;
+		height: 147px;
+		left: 815px;
+		top: 565px;
+		overflow: visible;
+	}
+@-webkit-keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+@keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+
+	#Gruppe_28 {
+		position: absolute;
+		width: 291px;
+		height: 68px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Gruppe_10 {
+		position: absolute;
+		width: 90.578px;
+		height: 24px;
+		left: 2px;
+		top: 0px;
+		overflow: visible;
+	}
+	#cc_6 {
+		fill: rgb(255, 255, 255);
+	}
+	.cc_6 {
+		position: absolute;
+		overflow: visible;
+		width: 2px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Teamspeak {
+		left: 32.578px;
+		top: 7.059px;
+		position: absolute;
+		overflow: visible;
+		width: 59px;
+		white-space: nowrap;
+		line-height: 12.500004768371582px;
+		margin-top: -1.0416674613952637px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10.416669845581055px;
+		color: rgb(255, 255, 255);
+	}
+	#teamspeak-brands {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 9px;
+		top: 4px;
+		overflow: visible;
+		filter: invert(0.5) brightness(200%);
+	}
+	#Gruppe_20 {
+		position: absolute;
+		width: 291px;
+		height: 33px;
+		left: 0px;
+		top: 35px;
+		overflow: visible;
+	}
+	#cc_4 {
+		opacity: 0.251;
+		fill: rgba(0,0,0,1);
+	}
+	.cc_4 {
+		position: absolute;
+		overflow: visible;
+		width: 291px;
+		height: 33px;
+		left: 0px;
+		top: 0px;
+	}
+	#tscc-vcc {
+		left: 109px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 85px;
+		white-space: nowrap;
+		line-height: 12.500004768371582px;
+		margin-top: -1.0416674613952637px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10.416669845581055px;
+		color: #fbfbfb;
+	}
+	#Gruppe_28_x {
+		position: absolute;
+		width: 291px;
+		height: 68px;
+		left: 0px;
+		top: 79px;
+		overflow: visible;
+	}
+	#Gruppe_10_y {
+		position: absolute;
+		width: 70.578px;
+		height: 24px;
+		left: 2px;
+		top: 0px;
+		overflow: visible;
+	}
+	#cc_6_z {
+		fill: rgb(255, 255, 255);
+	}
+	.cc_6_z {
+		position: absolute;
+		overflow: visible;
+		width: 2px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Discord {
+		left: 32.578px;
+		top: 7.059px;
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		white-space: nowrap;
+		line-height: 12.500004768371582px;
+		margin-top: -1.0416674613952637px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10.416669845581055px;
+		color: rgb(255, 255, 255);
+	}
+	#discord-brands_4 {
+		position: absolute;
+		width: 15px;
+		height: 18px;
+		left: 9px;
+		top: 3px;
+		overflow: visible;
+		filter: invert(0.5) brightness(200%);
+	}
+	#Gruppe_20_ {
+		position: absolute;
+		width: 291px;
+		height: 33px;
+		left: 0px;
+		top: 35px;
+		overflow: visible;
+	}
+	#cc_4_ {
+		opacity: 0.251;
+		fill: rgba(0,0,0,1);
+	}
+	.cc_4_ {
+		position: absolute;
+		overflow: visible;
+		width: 291px;
+		height: 33px;
+		left: 0px;
+		top: 0px;
+	}
+	#discordggcc {
+		left: 92px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 107px;
+		white-space: nowrap;
+		line-height: 12.500004768371582px;
+		margin-top: -1.0416674613952637px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10.416669845581055px;
+		color: #ffffff;
+	}
+	#Logo {
+		position: absolute;
+		height: 160px;
+		left: 880px;
+		top: 290px;
+		overflow: visible;
+	}
+	#Gruppe_31 {
+		position: absolute;
+		width: 274px;
+		height: 56px;
+		left: 815px;
+		top: 460px;
+		overflow: visible;
+	}
+	#SALTYCHAT_IST_NICHT_VERBUNDEN {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 273px;
+		white-space: nowrap;
+		line-height: 20.000003814697266px;
+		margin-top: -1.6666669845581055px;
+		text-align: center;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16.666669845581055px;
+		color: rgba(255,255,255,1);
+	}
+	#Um_auf_cc_zu_spielen_zu_ {
+		left: 10px;
+		top: 24px;
+		position: absolute;
+		overflow: visible;
+		width: 275px;
+		white-space: nowrap;
+		line-height: 15.000000953674316px;
+		margin-top: -1.2500004768371582px;
+		text-align: center;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(159,159,159,1);
+	}
+.browser-screen-loading-content {
+  text-align: center;
+  height: 2em;
+  max-width: 100%;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 3em;
+  left: 0;
+  margin: auto;
+}
+.loading-dots {
+  margin-left: -1.5em;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-animation: loading-dots-fadein .5s linear forwards;
+  -moz-animation: loading-dots-fadein .5s linear forwards;
+  -o-animation: loading-dots-fadein .5s linear forwards;
+  -ms-animation: loading-dots-fadein .5s linear forwards;
+  animation: loading-dots-fadein .5s linear forwards;
+}
+.loading-dots i {
+  width: .5em;
+  height: .5em;
+  display: inline-block;
+  vertical-align: middle;
+  background: rgb(255, 255, 255);
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 .125em;
+  -webkit-animation: loading-dots-middle-dots .5s linear infinite;
+  -moz-animation: loading-dots-middle-dots .5s linear infinite;
+  -o-animation: loading-dots-middle-dots .5s linear infinite;
+  -ms-animation: loading-dots-middle-dots .5s linear infinite;
+  animation: loading-dots-middle-dots .5s linear infinite;
+}
+.loading-dots.dark-gray i {
+  background: #fdfdfd;
+}
+.loading-dots i:first-child {
+  -webkit-animation: loading-dots-first-dot .5s infinite;
+  -moz-animation: loading-dots-first-dot .5s linear infinite;
+  -o-animation: loading-dots-first-dot .5s linear infinite;
+  -ms-animation: loading-dots-first-dot .5s linear infinite;
+  animation: loading-dots-first-dot .5s linear infinite;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(-1em);
+  -moz-transform: translate(-1em);
+  -o-transform: translate(-1em);
+  -ms-transform: translate(-1em);
+  transform: translate(-1em);
+}
+.loading-dots i:last-child {
+  -webkit-animation: loading-dots-last-dot .5s linear infinite;
+  -moz-animation: loading-dots-last-dot .5s linear infinite;
+  -o-animation: loading-dots-last-dot .5s linear infinite;
+  -ms-animation: loading-dots-last-dot .5s linear infinite;
+  animation: loading-dots-last-dot .5s linear infinite;
+}
+
+
+@-moz-keyframes loading-dots-fadein{100%{opacity:1;-ms-filter:none;filter:none}}
+@-webkit-keyframes loading-dots-fadein{100%{opacity:1;-ms-filter:none;filter:none}}
+@-o-keyframes loading-dots-fadein{100%{opacity:1;-ms-filter:none;filter:none}}
+@keyframes loading-dots-fadein{100%{opacity:1;-ms-filter:none;filter:none}}
+
+@-moz-keyframes loading-dots-first-dot{100%{-webkit-transform:translate(1em);-moz-transform:translate(1em);-o-transform:translate(1em);-ms-transform:translate(1em);transform:translate(1em);opacity:1;-ms-filter:none;filter:none}}
+@-webkit-keyframes loading-dots-first-dot{100%{-webkit-transform:translate(1em);-moz-transform:translate(1em);-o-transform:translate(1em);-ms-transform:translate(1em);transform:translate(1em);opacity:1;-ms-filter:none;filter:none}}
+@-o-keyframes loading-dots-first-dot{100%{-webkit-transform:translate(1em);-moz-transform:translate(1em);-o-transform:translate(1em);-ms-transform:translate(1em);transform:translate(1em);opacity:1;-ms-filter:none;filter:none}}
+@keyframes loading-dots-first-dot{100%{-webkit-transform:translate(1em);-moz-transform:translate(1em);-o-transform:translate(1em);-ms-transform:translate(1em);transform:translate(1em);opacity:1;-ms-filter:none;filter:none}}
+
+
+@-moz-keyframes loading-dots-middle-dots{100%{-webkit-transform:translate(1em);-moz-transform:translate(1em);-o-transform:translate(1em);-ms-transform:translate(1em);transform:translate(1em)}}
+@-webkit-keyframes loading-dots-middle-dots{100%{-webkit-transform:translate(1em);-moz-transform:translate(1em);-o-transform:translate(1em);-ms-transform:translate(1em);transform:translate(1em)}}
+@-o-keyframes loading-dots-middle-dots{100%{-webkit-transform:translate(1em);-moz-transform:translate(1em);-o-transform:translate(1em);-ms-transform:translate(1em);transform:translate(1em)}}
+@keyframes loading-dots-middle-dots{100%{-webkit-transform:translate(1em);-moz-transform:translate(1em);-o-transform:translate(1em);-ms-transform:translate(1em);transform:translate(1em)}}
+
+
+@-moz-keyframes loading-dots-last-dot{100%{-webkit-transform:translate(2em);-moz-transform:translate(2em);-o-transform:translate(2em);-ms-transform:translate(2em);transform:translate(2em);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}}
+@-webkit-keyframes loading-dots-last-dot{100%{-webkit-transform:translate(2em);-moz-transform:translate(2em);-o-transform:translate(2em);-ms-transform:translate(2em);transform:translate(2em);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}}
+@-o-keyframes loading-dots-last-dot{100%{-webkit-transform:translate(2em);-moz-transform:translate(2em);-o-transform:translate(2em);-ms-transform:translate(2em);transform:translate(2em);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}}
+@keyframes loading-dots-last-dot{100%{-webkit-transform:translate(2em);-moz-transform:translate(2em);-o-transform:translate(2em);-ms-transform:translate(2em);transform:translate(2em);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}}
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+</head>
+<body id="pluginScreen" class="pluginScreen">
+	<!--  <video id="bg" controls preload="true" autoplay loop muted>
+      <source src=" " type=" " > 
+   </video> --> 
+<div id="Canvas">
+	<div id="saltynui">
+			
+		<div id="Gruppe_29">
+			<div id="cc_14">
+			</div>
+		</div>
+		<div id="Gruppe_30">
+			<div id="Gruppe_28">
+				<div id="Gruppe_10">
+					<svg class="cc_6">
+						<rect id="cc_6" rx="1" ry="1" x="0" y="0" width="2" height="24">
+						</rect>
+					</svg>
+					<div id="Teamspeak">
+						<span>TeamSpeak 3</span>
+					</div>
+					<img id="teamspeak-brands" src="https://cdn.discordapp.com/attachments/788240573382787114/854193490062082078/teamspeak-brands.png">
+						
+				</div>
+				<div id="Gruppe_20">
+					<svg class="cc_4">
+						<rect id="cc_4" rx="5" ry="5" x="0" y="0" width="291" height="33">
+						</rect>
+					</svg>
+					<div id="tscc-vcc">
+						<span>darkisland.de</span>
+					</div>
+				</div>
+			</div>
+			<div id="Gruppe_28_x">
+				<div id="Gruppe_10_y">
+					<svg class="cc_6_z">
+						<rect id="cc_6_z" rx="1" ry="1" x="0" y="0" width="2" height="24">
+						</rect>
+					</svg>
+					<div id="Discord">
+						<span>Discord</span>
+					</div>
+					<img id="discord-brands_4" src="https://cdn.discordapp.com/attachments/788240573382787114/854193443562717214/discord-brands_4.png">
+						
+				</div>
+				<div id="Gruppe_20_">
+					<svg class="cc_4_">
+						<rect id="cc_4_" rx="5" ry="5" x="0" y="0" width="291" height="33">
+						</rect>
+					</svg>
+					<div id="discordggcc">
+						<span>discord.gg/darkisland</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img id="Logo" src="https://media.discordapp.net/attachments/968818701082185788/1016356498017882142/1.png">
+		<div class="browser-screen-loading-content">
+  				<div class="loading-dots dark-gray">
+    				<i></i>
+    				<i></i>
+    				<i></i>
+    				<i></i>
+  				</div>
+		</div> 
+			
+		<div id="Gruppe_31">
+			<div id="SALTYCHAT_IST_NICHT_VERBUNDEN">
+				<span>SaltyChat 3.1 Verbindung nicht erkannt!</span>
+			</div>
+			<div id="Um_auf_cc_zu_spielen_zu_">
+				<span> Du musst dich mit dem Teamspeak verbinden,</span><br><span>um auf Dark Island zu Spielen.</span><br>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
