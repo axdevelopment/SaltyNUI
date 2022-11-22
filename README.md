@@ -3,7 +3,8 @@
 ## What does it do?
 It opens a UI which tells the player, that he is not connected with TeamSpeak.
 On connect, the UI will disappear - on disconnect, the UI will appear.
-
+## Preview
+![]([https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif](https://i.imgur.com/IKK6xuI.gif))
 ## Installation
 ### Step 1
 - Download GitHub Repository
