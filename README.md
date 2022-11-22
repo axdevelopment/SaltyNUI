@@ -3,6 +3,8 @@
 ## What does it do?
 It opens a UI which tells the player, that he is not connected with TeamSpeak.
 On connect, the UI will disappear - on disconnect, the UI will appear.
+## Preview
+![](https://github.com/arrexscripts/SaltyNUI/blob/main/SaltyNUI/SaltyNUI%20Preview.gif)
 ## Installation
 ### Step 1
 - Download GitHub Repository
